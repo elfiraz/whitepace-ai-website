@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #DCEBFE;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1A3453;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    color: #1A3453;
+}
+
+.buttons .login {
+    background-color: transparent;
+    border: 1px solid #1A3453;
+    color: #1A3453;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .try-it-free {
+    background-color: #1A3453;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 68px;
+    color: #1A3453;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #1A3453;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hero .try-it-free-main {
+    background-color: #1A3453;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.features h2 {
+    font-size: 48px;
+    color: #1A3453;
+    margin-bottom: 20px;
+}
+
+.features > p {
+    font-size: 18px;
+    color: #1A3453;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #1A3453;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #1A3453;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #1A3453;
+    color: white;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.cta h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.cta .try-it-free-main {
+    background-color: #4F73DF;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #0E1D2B;
+    color: white;
+    padding: 80px 50px 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.logo-section {
+    max-width: 300px;
+}
+
+.logo-section .logo span {
+    color: white;
+}
+
+.logo-section p {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.links-section {
+    display: flex;
+    gap: 80px;
+}
+
+.links h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links ul li {
+    margin-bottom: 15px;
+}
+
+.links ul li a {
+    color: #A8B2BC;
+}
+
+.social-media {
+    text-align: center;
+    border-top: 1px solid #2A3C4D;
+    padding-top: 30px;
+}
+
+.social-media a {
+    margin: 0 15px;
+}
+
+.social-media img {
+    height: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    nav ul {
+        display: none;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .links-section {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .features h2, .cta h2 {
+        font-size: 36px;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        height: 3px;
+        width: 25px;
+        background-color: #1A3453;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav ul.active li {
+        margin: 15px 0;
+    }
+}
